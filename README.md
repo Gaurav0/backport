@@ -8,6 +8,6 @@ It can backport [rebased and merged](https://help.github.com/en/github/collabora
 
 1. :electric_plug: Add this [.github/workflows/backport.yml](.github/workflows/backport.yml) to your repository.
 2. :speech_balloon: Let's say you want to backport a pull request on a branch named `production`. Then label it with `backport production`. (See [how to create labels](https://help.github.com/articles/creating-a-label/).)
-3. :sparkles: That's it! When the pull request gets merged, a pull request will be opened, backporting the commit to the `production` branch. If the pull request cannot be backported, a comment explaining why will automatically be posted.
+3. :sparkles: That's it! When the pull request gets merged, another pull request will be opened, backporting the commit to the `production` branch. If the pull request cannot be backported, a comment explaining why will automatically be posted.
 
 _Note:_ multiple backport labels can be added. For example, if a pull request has the labels `backport staging` and `backport production` it will be backported to both branches: `staging` and `production`.
