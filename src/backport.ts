@@ -104,7 +104,7 @@ const backportOnce = async ({
     await git("checkout", "-b", head);
     try {
       try {
-        await git("cherry-pick", "-n", commitToBackport);
+        await git("cherry-pick", "-m", "1", "-n", commitToBackport);
       } catch (error3) {
         warning(error3); // continue but warn
       }
